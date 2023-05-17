@@ -1,11 +1,17 @@
 {
   "name": "create-pet-project",
-  "version": "1.0.0",
+  "version": "1.1.19",
   "description": "very opinionated and personalized cli tool to initiate a pet project",
   "author": "Imtiaz Ahmed Khan",
-  "main": "dist/index.js",
+  "files": [
+    "dist/*",
+    "bin/run"
+  ],
+  "bin": {
+    "run": "./bin/run"
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf ./dist && tsc",
     "start": "node dist/index.js"
   },
   "license": "ISC",
