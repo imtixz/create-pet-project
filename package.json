@@ -2,17 +2,20 @@
   "name": "create-pet-project",
   "version": "1.0.0",
   "description": "very opinionated and personalized cli tool to initiate a pet project",
-  "main": "index.js",
   "author": "Imtiaz Ahmed Khan",
-  "bin": {
-    "create-pet-project": "./index.js"
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
-  "license": "MIT",
-  "type": "module",
-  "dependencies": {
-    "inquirer": "^9.1.2"
-  },
+  "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.19.3"
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^20.1.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3"
   }
 }

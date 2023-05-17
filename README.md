@@ -1,3 +1,3 @@
 # create-pet-project
 
-Is it called create-pet-project beacuse it's used for a pet project? Or is it because the stack is prisma, express and trpc? I guess we'll never know.
+A very opinionated way to initiate a type-safe backend project to move fast while keeping code-base very adaptable to changes. Supports multiple databases (postgres, mongo, redis) through the repository design pattern. Supports both TRPC and normal REST routes for different use-cases. Comes with JWT tokens or Session tokens already implemented.
